@@ -1,0 +1,721 @@
+{
+  "columns": [
+    {
+      "table_name": "access_levels",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "access_levels",
+      "column_name": "name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "access_levels",
+      "column_name": "color",
+      "data_type": "text"
+    },
+    {
+      "table_name": "access_levels",
+      "column_name": "unit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "access_logs",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "access_logs",
+      "column_name": "user_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "access_logs",
+      "column_name": "user_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "access_logs",
+      "column_name": "resource_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "access_logs",
+      "column_name": "resource_nup",
+      "data_type": "text"
+    },
+    {
+      "table_name": "access_logs",
+      "column_name": "resource_type",
+      "data_type": "text"
+    },
+    {
+      "table_name": "access_logs",
+      "column_name": "timestamp",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "access_logs",
+      "column_name": "ip",
+      "data_type": "text"
+    },
+    {
+      "table_name": "access_logs",
+      "column_name": "unit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "archival_classifications",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "archival_classifications",
+      "column_name": "code",
+      "data_type": "text"
+    },
+    {
+      "table_name": "archival_classifications",
+      "column_name": "name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "archival_classifications",
+      "column_name": "unit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "contracts",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "contracts",
+      "column_name": "number",
+      "data_type": "text"
+    },
+    {
+      "table_name": "contracts",
+      "column_name": "description",
+      "data_type": "text"
+    },
+    {
+      "table_name": "contracts",
+      "column_name": "unit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "doc_types",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "doc_types",
+      "column_name": "name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "doc_types",
+      "column_name": "unit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "nup",
+      "data_type": "text"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "description",
+      "data_type": "text"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "type_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "interested_ids",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "sector_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "annexed_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "annexed_by_user_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "file_name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "file_content",
+      "data_type": "text"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "is_archived",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "access_level_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "author_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "archival_classification_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "contract_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "process_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "parent_doc_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "attachments",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "comments",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "is_pending_reception",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "sender_sector_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "destination_user_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "documents",
+      "column_name": "unit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "interested_parties",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "interested_parties",
+      "column_name": "type",
+      "data_type": "text"
+    },
+    {
+      "table_name": "interested_parties",
+      "column_name": "name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "interested_parties",
+      "column_name": "identifier",
+      "data_type": "text"
+    },
+    {
+      "table_name": "interested_parties",
+      "column_name": "unit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "organizational_units",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "organizational_units",
+      "column_name": "name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "organizational_units",
+      "column_name": "cnpj",
+      "data_type": "text"
+    },
+    {
+      "table_name": "organizational_units",
+      "column_name": "address",
+      "data_type": "text"
+    },
+    {
+      "table_name": "organizational_units",
+      "column_name": "is_primary",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "nup",
+      "data_type": "text"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "description",
+      "data_type": "text"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "interested_ids",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "sector_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "status",
+      "data_type": "text"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "is_archived",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "access_level_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "archival_classification_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "contract_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "cover_template_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "parent_process_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "annex_type",
+      "data_type": "text"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "annexed_by_user_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "is_pending_reception",
+      "data_type": "boolean"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "sender_sector_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "destination_user_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "unit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "processes",
+      "column_name": "history",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "permissions",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "profiles",
+      "column_name": "unit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "sectors",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "sectors",
+      "column_name": "name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "sectors",
+      "column_name": "unit_id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "users",
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "table_name": "users",
+      "column_name": "cpf",
+      "data_type": "text"
+    },
+    {
+      "table_name": "users",
+      "column_name": "name",
+      "data_type": "text"
+    },
+    {
+      "table_name": "users",
+      "column_name": "email",
+      "data_type": "text"
+    },
+    {
+      "table_name": "users",
+      "column_name": "phone",
+      "data_type": "text"
+    },
+    {
+      "table_name": "users",
+      "column_name": "password",
+      "data_type": "text"
+    },
+    {
+      "table_name": "users",
+      "column_name": "assignments",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "users",
+      "column_name": "authorized_access_level_ids",
+      "data_type": "jsonb"
+    },
+    {
+      "table_name": "users",
+      "column_name": "avatar_color",
+      "data_type": "text"
+    },
+    {
+      "table_name": "users",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    }
+  ],
+  "constraints": [
+    {
+      "table_name": "organizational_units",
+      "constraint_name": "organizational_units_pkey",
+      "constraint_type": "PRIMARY KEY",
+      "column_name": "id"
+    },
+    {
+      "table_name": "sectors",
+      "constraint_name": "sectors_pkey",
+      "constraint_type": "PRIMARY KEY",
+      "column_name": "id"
+    },
+    {
+      "table_name": "sectors",
+      "constraint_name": "sectors_unit_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "unit_id"
+    },
+    {
+      "table_name": "access_levels",
+      "constraint_name": "access_levels_pkey",
+      "constraint_type": "PRIMARY KEY",
+      "column_name": "id"
+    },
+    {
+      "table_name": "access_levels",
+      "constraint_name": "access_levels_unit_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "unit_id"
+    },
+    {
+      "table_name": "profiles",
+      "constraint_name": "profiles_pkey",
+      "constraint_type": "PRIMARY KEY",
+      "column_name": "id"
+    },
+    {
+      "table_name": "profiles",
+      "constraint_name": "profiles_unit_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "unit_id"
+    },
+    {
+      "table_name": "users",
+      "constraint_name": "users_pkey",
+      "constraint_type": "PRIMARY KEY",
+      "column_name": "id"
+    },
+    {
+      "table_name": "doc_types",
+      "constraint_name": "doc_types_pkey",
+      "constraint_type": "PRIMARY KEY",
+      "column_name": "id"
+    },
+    {
+      "table_name": "doc_types",
+      "constraint_name": "doc_types_unit_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "unit_id"
+    },
+    {
+      "table_name": "archival_classifications",
+      "constraint_name": "archival_classifications_pkey",
+      "constraint_type": "PRIMARY KEY",
+      "column_name": "id"
+    },
+    {
+      "table_name": "archival_classifications",
+      "constraint_name": "archival_classifications_unit_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "unit_id"
+    },
+    {
+      "table_name": "contracts",
+      "constraint_name": "contracts_pkey",
+      "constraint_type": "PRIMARY KEY",
+      "column_name": "id"
+    },
+    {
+      "table_name": "contracts",
+      "constraint_name": "contracts_unit_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "unit_id"
+    },
+    {
+      "table_name": "interested_parties",
+      "constraint_name": "interested_parties_pkey",
+      "constraint_type": "PRIMARY KEY",
+      "column_name": "id"
+    },
+    {
+      "table_name": "interested_parties",
+      "constraint_name": "interested_parties_unit_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "unit_id"
+    },
+    {
+      "table_name": "processes",
+      "constraint_name": "processes_pkey",
+      "constraint_type": "PRIMARY KEY",
+      "column_name": "id"
+    },
+    {
+      "table_name": "processes",
+      "constraint_name": "processes_sector_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "sector_id"
+    },
+    {
+      "table_name": "processes",
+      "constraint_name": "processes_access_level_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "access_level_id"
+    },
+    {
+      "table_name": "processes",
+      "constraint_name": "processes_archival_classification_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "archival_classification_id"
+    },
+    {
+      "table_name": "processes",
+      "constraint_name": "processes_contract_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "contract_id"
+    },
+    {
+      "table_name": "processes",
+      "constraint_name": "processes_annexed_by_user_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "annexed_by_user_id"
+    },
+    {
+      "table_name": "processes",
+      "constraint_name": "processes_sender_sector_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "sender_sector_id"
+    },
+    {
+      "table_name": "processes",
+      "constraint_name": "processes_destination_user_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "destination_user_id"
+    },
+    {
+      "table_name": "processes",
+      "constraint_name": "processes_unit_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "unit_id"
+    },
+    {
+      "table_name": "documents",
+      "constraint_name": "documents_pkey",
+      "constraint_type": "PRIMARY KEY",
+      "column_name": "id"
+    },
+    {
+      "table_name": "documents",
+      "constraint_name": "documents_type_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "type_id"
+    },
+    {
+      "table_name": "documents",
+      "constraint_name": "documents_sector_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "sector_id"
+    },
+    {
+      "table_name": "documents",
+      "constraint_name": "documents_annexed_by_user_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "annexed_by_user_id"
+    },
+    {
+      "table_name": "documents",
+      "constraint_name": "documents_access_level_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "access_level_id"
+    },
+    {
+      "table_name": "documents",
+      "constraint_name": "documents_author_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "author_id"
+    },
+    {
+      "table_name": "documents",
+      "constraint_name": "documents_archival_classification_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "archival_classification_id"
+    },
+    {
+      "table_name": "documents",
+      "constraint_name": "documents_contract_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "contract_id"
+    },
+    {
+      "table_name": "documents",
+      "constraint_name": "documents_process_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "process_id"
+    },
+    {
+      "table_name": "documents",
+      "constraint_name": "documents_sender_sector_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "sender_sector_id"
+    },
+    {
+      "table_name": "documents",
+      "constraint_name": "documents_destination_user_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "destination_user_id"
+    },
+    {
+      "table_name": "documents",
+      "constraint_name": "documents_unit_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "unit_id"
+    },
+    {
+      "table_name": "access_logs",
+      "constraint_name": "access_logs_pkey",
+      "constraint_type": "PRIMARY KEY",
+      "column_name": "id"
+    },
+    {
+      "table_name": "access_logs",
+      "constraint_name": "access_logs_user_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "user_id"
+    },
+    {
+      "table_name": "access_logs",
+      "constraint_name": "access_logs_unit_id_fkey",
+      "constraint_type": "FOREIGN KEY",
+      "column_name": "unit_id"
+    }
+  ]
+}

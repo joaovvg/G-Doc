@@ -1,0 +1,35 @@
+Project: G-Doc enterprise with PostgreSQL backend and React/Vite frontend
+
+Architecture overview:
+- Frontend: React + TypeScript + Vite
+- Backend: Node.js + Express + PostgreSQL
+- Database: PostgreSQL schema and seed files in backend/db/
+- Communication: frontend calls backend via /api/... endpoints
+
+Important entry points:
+- Root frontend: App.tsx, index.tsx, Vite config in vite.config.ts
+- Backend entry: backend/src/server.js
+- Backend config: backend/src/config.js
+- Database layer: backend/src/db.js
+- Repositories/API mapping: backend/src/repositories.js
+- SQL schema + migrations: backend/db/schema.sql, backend/db/fix_tables.sql, backend/db/seed.sql
+
+API contract:
+- GET /api/health
+- GET /api/:tableName
+- POST /api/:tableName/upsert
+- DELETE /api/:tableName/:id
+- External portal endpoints under /api/external-portal/*
+- Supported tables include: units, profiles, sectors, users, doc_types, classifications, cover_templates, interested, documents, processes, counter, contracts, access_levels, access_logs, portal_services
+
+Environment:
+- Root .env from .env.example for frontend
+- backend/.env from backend/.env.example for backend
+- Backend depends on DATABASE_URL and optional CORS_ORIGIN
+
+Project notes for agent:
+- Use backend/src files for server changes, not dist or built artifact files.
+- Use MD/ files for documentation and context notes.
+- Respect generic repository/tableName behavior: not all arbitrary tables are accepted.
+- The app is designed to preserve existing IDs as TEXT in PostgreSQL.
+- Do not treat the backend as a migration framework; schema changes are managed via SQL scripts.

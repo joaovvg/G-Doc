@@ -1,0 +1,12 @@
+import pg from 'pg';
+import dotenv from 'dotenv';
+import fs from 'fs';
+dotenv.config();
+const { Pool } = pg;
+const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+const client = await pool.connect();
+const res = await client.query("SELECT id, name, is_primary FROM organizational_units ORDER BY name");
+fs.writeFileSync('units_output.json', JSON.stringify(res.rows, null, 2));
+console.log('Done. Written to units_output.json');
+client.release();
+await pool.end();
